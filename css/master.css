@@ -17,6 +17,18 @@ COMMON
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
 .jsb{
     justify-content: space-between;
 }
@@ -43,13 +55,24 @@ COMMON
     background-color:rgb(0, 132, 253);
 }
 
+.bg-cyan{
+    background-color: rgb(181, 221, 255);
+}
+
 /******************************
 NAVBAR
 /******************************/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;    
+}
 
 .navbar{
     width: 100%;
-   padding: 20px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -76,12 +99,65 @@ NAVBAR
     .menu-ham{
         display: none;
     }
-    
+}
 
 /******************************
 SECTION TOOL
 /******************************/
+main{
+    padding-top: 100px;    
+}
 
+.tool{
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    gap: 20px;
+    /* debug */
+    /* background-color: rgb(255, 254, 254); */
+    height: 1000px;
+}
+
+.card{
+    width: 90%;
+    height: calc(100% / 6);
+    border-radius: 15px;
+     /* debug */
+}
+
+.card.big{
+    /* height: 450px; */
+}
+
+@media screen and (min-width: 768px) {
+    .tool{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: min-content;
+        justify-content: space-between;
+    }
+
+    .card.big{
+        width: 60%;
+    }
+
+    .card.normal{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .card{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .tool{
+        margin:0 auto;
+        width: 80%;
+    }
+    
+}
 
 
 /******************************
