@@ -317,7 +317,60 @@ section .benefit{
 SECTION ABOUT US
 /******************************/
 
+.about-us{
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    gap: 20px;
+}
 
+.about-us-text{
+    height: 400px;
+}
+
+.about-us-author{
+    height: 150px;
+}
+
+.about-us-text,
+.about-us-author{
+    width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us{
+        flex-direction: row;
+        align-items: flex-start;
+    }    
+
+    .about-us-text{
+        width: 60%;
+    }
+
+    .about-us-author{
+        height: 250px;
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .about-us{
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about-us-text{
+        width: 65%;
+    }
+
+    .about-us-author{
+        width: 25%;
+    }
+
+}
 
 /******************************
 SECTION PRE FOOTER
