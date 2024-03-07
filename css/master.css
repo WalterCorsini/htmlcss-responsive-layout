@@ -210,7 +210,6 @@ SECTION STRATEGY
 
     .strategy{
         justify-content: flex-end;
-        /* flex-direction: row; */
         margin: 0 auto;
         width: 80%;
         height: 1000px;
@@ -266,8 +265,53 @@ SECTION TESTIMONIAL
 /******************************
 SECTION BENEFIT
 /******************************/
+section .benefit{
+    justify-content: center;
+}
 
+.benefit-title{
+    margin-bottom: -1px;
+    text-align: center;
+    padding-top: 5%;
+}
 
+.benefit{
+    padding: 5%;
+    gap: 20px;
+    align-items: center;
+}
+
+.benefit .card{
+    width: 90%;
+    height: 350px;
+    background-color: rgb(214, 169, 255);
+}
+
+@media screen and (min-width: 768px) {
+    
+    .benefit{
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefit .card{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .benefit{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .benefit .card{
+        width: 28%;
+    }
+}
 
 /******************************
 SECTION ABOUT US
