@@ -68,7 +68,7 @@ COMMON
 
 .icon{
     padding-bottom: 20px;
-    font-size: calc(15vw + 0.5rem);
+    font-size: calc(10vw + 0.5rem);
 }
 
 /* color text */
@@ -162,15 +162,10 @@ main{
     width: 100%;
     padding: 5%;
     gap: 20px;
-    /* debug */
-    /* background-color: rgb(255, 254, 254); */
-    /* height: 1000px; */
 }
 
 .tool .card{
     width: 90%;
-    /* debug */
-    /* height: calc(100% / 6); */
 }
 
 .tool img{
@@ -191,11 +186,17 @@ main{
     }
 
     .card.big{
-        width: 60%;
+        width: 40%;
     }
 
     .card.normal{
         width: calc(100% / 3 - 20px);
+    }
+
+    .tool-img img{
+        width: 50%;
+        position: relative;
+        right: 20%;
     }
 }
 
@@ -212,13 +213,22 @@ main{
     }
 
     .tool-text{
-        width: 60%;
+        width: 50%;
+    }
+
+    .tool-img{
+        position: relative;
+        width: 50%;
     }
 
     .tool-img img{
-        max-width: 70%;
-    }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;      
 
+    }
+}
 
 /******************************
 SECTION STRATEGY
