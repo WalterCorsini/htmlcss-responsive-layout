@@ -39,11 +39,11 @@ COMMON
 
 /* color text */
 .white{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .black{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .yellow{
@@ -56,7 +56,11 @@ COMMON
 
 /* bg color */
 .bg-white{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-black{
+    background-color: rgb(51, 51, 51);
 }
 
 .bg-lightblue{
@@ -384,8 +388,6 @@ SECTION PRE FOOTER
     width: 100%;  
     padding: 5%; 
     text-align: center; 
-    /* debug */
-    height: 500px;
 }
 
 .prefooter span{
@@ -412,5 +414,26 @@ SECTION PRE FOOTER
 SECTION FOOTER
 /******************************/
 
+.footer{
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+}
 
+.footer span{
+    display: block;
+}
+
+.footer span:first-child{
+    padding-bottom: 10% ;
+}
+
+@media screen and (min-width: 768px) {
+    /* nothing at the moment */
+}
+
+
+@media screen and (min-width: 992px) {
+    /* nothing at the moment */
+}
 
