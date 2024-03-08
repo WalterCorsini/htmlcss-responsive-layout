@@ -501,6 +501,12 @@ SECTION ABOUT US
     border-radius: 50%;
 }
 
+.about-us-author a{
+    display: inline-block;
+    /* padding: 0.5rem;
+    border-radius: 20px; */
+}
+
 
 @media screen and (min-width: 768px) {
     .about-us{
@@ -532,6 +538,7 @@ SECTION ABOUT US
 
     .about-us-author{
         width: 25%;
+        padding: 10px;
     }
 
 }
@@ -551,8 +558,31 @@ SECTION PRE FOOTER
     padding: 5%;
 }
 
+.prefooter>span:first-child{
+    color: rgb(200, 198, 227);
+}
+
+.prefooter .motivation{
+    padding-bottom: 30px;
+}
+
+.prefooter h2{
+    font-size: 40px;
+}
+
 .prefooter .yellow{
     padding-top: 5%;
+    font-size: 60px;
+}
+
+.prefooter>a{
+    padding: .5rem 4rem;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.prefooter span a{
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -584,12 +614,22 @@ SECTION FOOTER
     padding-bottom: 10% ;
 }
 
+.footer span a{
+    color: rgb(151, 146, 228);
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
-    /* nothing at the moment */
+    .footer{
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 
 @media screen and (min-width: 992px) {
-    /* nothing at the moment */
+    .footer{
+        width: 40%;
+    }
 }
 
