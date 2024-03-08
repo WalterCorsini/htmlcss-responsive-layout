@@ -60,11 +60,6 @@ COMMON
     display: inline-block;    
 }
 
-.card p{
-    padding: 10% 0;
-    font-size: calc(1vw + 0.5rem);
-}
-
 .icon{
     padding-bottom: 10%;
     font-size:calc(6vw + 0.5rem);
@@ -168,6 +163,11 @@ main{
     width: 100%;
     padding: 5%;
     gap: 20px;
+}
+
+.tool p{
+    padding: 10% 0;
+    font-size: calc(1vw + 0.5rem);
 }
 
 .tool .card{
@@ -335,7 +335,6 @@ SECTION TESTIMONIAL
     width: 90%;
 }
 
-
 .testimonial-img img{
     width: 70%;
     aspect-ratio: 1;
@@ -343,6 +342,7 @@ SECTION TESTIMONIAL
     object-fit: cover;
     border-radius: 50%;
 }
+
 blockquote{
     padding: 5% 0;
 }
@@ -405,16 +405,25 @@ section .benefit{
 }
 
 .benefit{
-    padding: 5%;
+    padding: 20px;
     gap: 20px;
     align-items: center;
 }
 
 .benefit .card{
     width: 90%;
-    height: 350px;
-    background-color: rgb(214, 169, 255);
+    padding: 20px;
+    text-align: left;
 }
+
+.benefit span{
+    font-size: 3rem;
+}
+
+.benefit p{
+    padding: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
     
@@ -454,30 +463,56 @@ SECTION ABOUT US
 }
 
 .about-us-text{
-    height: 400px;
+    padding: 20px;
+}
+
+.about-us h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.about-us-text p{
+    padding-bottom: 30px;
+}
+
+.author-img{
+    position: relative;
 }
 
 .about-us-author{
-    height: 150px;
+    width: 60%;
+    padding: 20px;
 }
 
-.about-us-text,
-.about-us-author{
-    width: 90%;
+.about-us-author i{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    font-size: 50px;
 }
+
+.about-us blockquote strong{
+    font-size: 20px;
+}
+
+.about-us-author img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
 
 @media screen and (min-width: 768px) {
     .about-us{
         flex-direction: row;
-        align-items: flex-start;
+        justify-content: center;
     }    
 
     .about-us-text{
-        width: 60%;
+        width: 40%;
     }
 
     .about-us-author{
-        height: 250px;
         width: 30%;
     }
 
