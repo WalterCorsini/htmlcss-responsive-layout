@@ -360,7 +360,7 @@ blockquote .reverse{
 }
 
 .card-testimonial .author strong{
- font-size: 20px;
+ font-size: 1.2rem;
 }
 
 
@@ -466,7 +466,7 @@ SECTION ABOUT US
 }
 
 .about-us h2{
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-bottom: 1.2rem;
 }
 
@@ -487,11 +487,11 @@ SECTION ABOUT US
     position: absolute;
     top: 0;
     right: 1%;
-    font-size: 50px;
+    font-size: 3.2rem;
 }
 
 .about-us blockquote strong{
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .about-us-author img{
@@ -564,12 +564,12 @@ SECTION PRE FOOTER
 }
 
 .prefooter h2{
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .prefooter .yellow{
     padding-top: 1rem;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .prefooter>a{
