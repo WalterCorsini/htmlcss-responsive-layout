@@ -3,10 +3,10 @@
 SECTION TOOL
 /******************************/
 
-.card.big {
+.tool .card .tool-text{
     text-align: left;
     height: min-content;
-    width: 40%;
+    width: 100%;
 }
 
 .tool {
@@ -16,12 +16,17 @@ SECTION TOOL
     justify-content: space-between;
 }
 
-.card.normal {
+.tool .card:first-child{
+    width: calc(2 * 100% / 3 - 0.6rem);
+}
+
+.tool .card{
     width: calc(100% / 3 - 20px);
 }
 
 .tool-text {
     width: 100%;
+    text-align: left;
 }
 
 .tool-img img {
@@ -126,7 +131,8 @@ SECTION FOOTER
 SECTION TOOL
 /******************************/
 
-.card.big {
+.tool .card.flex{
+    align-items: flex-end;
     flex-direction: row;
 }
 
