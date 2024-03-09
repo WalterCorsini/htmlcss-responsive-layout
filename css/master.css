@@ -1,3 +1,7 @@
+/****************************
+RESET
+/***************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ img {
 /******************************
 COMMON
 /******************************/
+
 body{
     font-family: 'Pt Sans';
 }
@@ -50,6 +55,20 @@ body{
     padding: 1.2rem 1.2rem 0 1.2rem;
 }
 
+.btn {
+    padding: 0.8rem 1.2rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.icon {
+    padding-bottom: 1.2rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/******************************************* 
+FONT
+/******************************************/
 .card h2 {
     font-size: clamp(1rem, 5vw, 2rem);
     padding-bottom: 0.625rem;
@@ -68,18 +87,10 @@ body{
     font-size: clamp(1rem, 1vw, 2rem);
 }
 
-.btn {
-    padding: 0.8rem 1.2rem;
-    border-radius: 20px;
-    display: inline-block;
-}
+/*****************************
+COLOR TEXT 
+/****************************/
 
-.icon {
-    padding-bottom: 1.2rem;
-    font-size: clamp(2rem, 5vw, 4rem);
-}
-
-/* color text */
 .white {
     color: rgb(255, 255, 255);
 }
@@ -100,7 +111,10 @@ body{
     color: rgb(0, 132, 253);
 }
 
-/* bg color */
+/*****************************
+BACKGROUND-COLOR
+/****************************/
+
 .bg-white {
     background-color: rgb(255, 255, 255);
 }
@@ -122,8 +136,9 @@ body{
 }
 
 /******************************
-NAVBAR
+SECTION NAVBAR
 /******************************/
+
 header {
     position: fixed;
     width: 100%;
@@ -136,8 +151,6 @@ header {
     width: 100%;
     padding: 1.2rem;
     align-items: center;
-
-
 }
 
 .navbar-list li {
@@ -147,24 +160,10 @@ header {
     display: none;
 }
 
-@media screen and (min-width: 992px) {
-
-    .navbar {
-        width: 80%;
-    }
-
-    .navbar-list li {
-        display: block;
-    }
-
-    .menu-ham {
-        display: none;
-    }
-}
-
 /******************************
 SECTION TOOL
 /******************************/
+
 main {
     padding-top: 6.25rem;
 }
@@ -188,8 +187,6 @@ main {
     width: 90%;
 }
 
-
-
 .tool-img img {
     padding-top: 1rem;
     display: block;
@@ -202,63 +199,6 @@ main {
 .tool-img p,
 .tool-img h2 {
     text-align: left;
-}
-
-@media screen and (min-width: 768px) {
-
-    .card.big {
-        text-align: left;
-        height: min-content;
-        width: 40%;
-    }
-
-    .tool {
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: min-content;
-        justify-content: space-between;
-    }
-
-    .card.normal {
-        width: calc(100% / 3 - 20px);
-    }
-
-    .tool-text {
-        width: 100%;
-    }
-
-
-    .tool-img img {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .card.big {
-        flex-direction: row;
-    }
-
-    .tool .btn {
-        margin-bottom: 1rem;
-    }
-
-    .tool {
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .tool-text {
-        width: 50%;
-    }
-
-    .tool-img {
-        width: 50%;
-    }
-
-    .tool-img img {
-        width: 100%;
-    }
 }
 
 /******************************
@@ -296,24 +236,6 @@ SECTION STRATEGY
     border-radius: 50%;
 }
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 992px) {
-
-    .strategy {
-        flex-direction: row;
-        align-items: flex-end;
-        margin: 0 auto;
-        width: 80%;
-        flex-wrap: wrap;
-    }
-
-    .card.photo,
-    .card.app {
-        width: 45%;
-    }
-}
-
 /******************************
 SECTION TESTIMONIAL
 /******************************/
@@ -335,7 +257,6 @@ SECTION TESTIMONIAL
 
 .testimonial-text span {
     display: block;
-
 }
 
 .testimonial-text span,
@@ -371,43 +292,10 @@ blockquote .reverse {
     padding-top: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-
-    .card-testimonial {
-        flex-direction: row;
-        padding: 1rem;
-    }
-
-    .testimonial {
-        padding: 0.4rem;
-    }
-
-    .testimonial-img {
-        width: 40%;
-    }
-
-    .testimonial-text span {
-   
-    }
-
-    .card .testimonial-text strong {
-        font-size: 1.7rem;
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-
-    .testimonial {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-}
-
 /******************************
 SECTION BENEFIT
 /******************************/
+
 section .benefit {
     justify-content: center;
 }
@@ -437,33 +325,6 @@ section .benefit {
     padding: 1.2rem;
 }
 
-
-@media screen and (min-width: 768px) {
-
-    .benefit {
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .benefit .card {
-        width: 45%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .benefit {
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .benefit .card {
-        width: 28%;
-    }
-}
-
 /******************************
 SECTION ABOUT US
 /******************************/
@@ -488,7 +349,6 @@ SECTION ABOUT US
 .about-us-text p {
     font-size: clamp(0.8rem, 1vw, 2rem);
     padding-bottom: 1.6rem;
-
 }
 
 .author-img {
@@ -521,42 +381,6 @@ SECTION ABOUT US
     display: inline-block;
 }
 
-
-@media screen and (min-width: 768px) {
-    .about-us {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .about-us-text {
-        width: 40%;
-    }
-
-    .about-us-author {
-        width: 30%;
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-
-    .about-us {
-        justify-content: center;
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .about-us-text {
-        width: 65%;
-    }
-
-    .about-us-author {
-        width: 25%;
-        padding: 1rem;
-    }
-
-}
-
 /******************************
 SECTION PRE FOOTER
 /******************************/
@@ -564,7 +388,6 @@ SECTION PRE FOOTER
 .prefooter {
     width: 100%;
     padding: 1rem;
-
     text-align: center;
 }
 
@@ -599,17 +422,6 @@ SECTION PRE FOOTER
     text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) {
-    /* nothing at the moment */
-}
-
-@media screen and (min-width: 992px) {
-    .prefooter {
-        margin: 0 auto;
-        width: 80%;
-    }
-}
-
 /******************************
 SECTION FOOTER
 /******************************/
@@ -631,18 +443,4 @@ SECTION FOOTER
 .footer span a {
     color: rgb(151, 146, 228);
     text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-    .footer {
-        width: 60%;
-        margin: 0 auto;
-    }
-}
-
-
-@media screen and (min-width: 992px) {
-    .footer {
-        width: 40%;
-    }
 }

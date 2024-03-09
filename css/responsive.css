@@ -1,0 +1,229 @@
+@media screen and (min-width: 768px) {
+/******************************
+SECTION TOOL
+/******************************/
+
+.card.big {
+    text-align: left;
+    height: min-content;
+    width: 40%;
+}
+
+.tool {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: min-content;
+    justify-content: space-between;
+}
+
+.card.normal {
+    width: calc(100% / 3 - 20px);
+}
+
+.tool-text {
+    width: 100%;
+}
+
+.tool-img img {
+    width: 50%;
+}
+
+/******************************
+SECTION STRATEGY
+/******************************/
+
+/* empty */
+
+/******************************
+SECTION TESTIMONIAL
+/******************************/
+
+.card-testimonial {
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.testimonial {
+    padding: 0.4rem;
+}
+
+.testimonial-img {
+    width: 40%;
+}
+
+.card .testimonial-text strong {
+    font-size: 1.7rem;
+}
+
+/******************************
+SECTION BENEFIT
+/******************************/
+
+.benefit {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.benefit .card {
+    width: 45%;
+}
+
+/******************************
+SECTION ABOUT US
+/******************************/
+
+.about-us {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-us-text {
+    width: 40%;
+}
+
+.about-us-author {
+    width: 30%;
+}
+
+/******************************
+SECTION PRE FOOTER
+/******************************/
+
+/* empty */
+
+/******************************
+SECTION FOOTER
+/******************************/
+
+.footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+}
+
+
+@media screen and (min-width: 992px) {
+/************************ 
+        nav bar
+/*************************/
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar-list li {
+        display: block;
+    }
+
+    .menu-ham {
+        display: none;
+    }
+
+
+/******************************
+SECTION TOOL
+/******************************/
+
+.card.big {
+    flex-direction: row;
+}
+
+.tool .btn {
+    margin-bottom: 1rem;
+}
+
+.tool {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.tool-text {
+    width: 50%;
+}
+
+.tool-img {
+    width: 50%;
+}
+
+.tool-img img {
+    width: 100%;
+}
+
+/******************************
+SECTION STRATEGY
+/******************************/
+
+.strategy {
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.card.photo,
+.card.app {
+    width: 45%;
+}
+
+/******************************
+SECTION TESTIMONIAL
+/******************************/
+
+.testimonial {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/******************************
+SECTION BENEFIT
+/******************************/
+
+.benefit {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.benefit .card {
+    width: 28%;
+}
+
+/******************************
+SECTION ABOUT US
+/******************************/
+
+.about-us {
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.about-us-text {
+    width: 65%;
+}
+
+.about-us-author {
+    width: 25%;
+    padding: 1rem;
+}
+
+/******************************
+SECTION PRE FOOTER
+/******************************/
+
+.prefooter {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/******************************
+SECTION FOOTER
+/******************************/
+
+.footer {
+    width: 40%;
+}
+
+}
