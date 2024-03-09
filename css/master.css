@@ -1,148 +1,163 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 /******************************
 COMMON
 /******************************/
-.flex{
+body{
+    font-family: 'Pt Sans';
+}
+
+.flex {
     display: flex;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.grow{
+.grow {
     flex-grow: 1;
 }
 
-.jsb{
+.jsb {
     justify-content: space-between;
 }
 
-.jc{
+.jc {
     justify-content: center;
 }
-.card{
+
+.card {
     border-radius: 15px;
     text-align: center;
     padding: 1.2rem 1.2rem 0 1.2rem;
 }
 
-.card h2{
-    font-size: calc(1.6vw + .5rem);
+.card h2 {
+    font-size: clamp(1rem, 5vw, 2rem);
     padding-bottom: 0.625rem;
 }
 
-.card h3{
+.card h3 {
     font-size: calc(2vw + 0.6rem);
 }
 
-.btn{
-    padding: 0.8rem 1.2rem;
-    border-radius: 20px;
-    display: inline-block;    
+.card p{
+    font-size: clamp(0.8rem, 1vw, 2rem);
 }
 
-.icon{
+.card .icon-btn,
+.card span {
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.icon {
     padding-bottom: 1.2rem;
-    font-size:calc(6vw + 0.5rem);
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 /* color text */
-.white{
+.white {
     color: rgb(255, 255, 255);
 }
 
-.black{
+.black {
     color: rgb(0, 0, 0);
 }
 
-.yellow{
+.yellow {
     color: rgb(253, 193, 95);
 }
 
-.lilla{
+.lilla {
     color: rgb(151, 146, 228);
 }
 
-.lightblue{
-    color:rgb(0, 132, 253);
+.lightblue {
+    color: rgb(0, 132, 253);
 }
 
 /* bg color */
-.bg-white{
+.bg-white {
     background-color: rgb(255, 255, 255);
 }
 
-.bg-black{
+.bg-black {
     background-color: rgb(51, 51, 51);
 }
 
-.bg-lightblue{
-    background-color:rgb(0, 132, 253);
+.bg-lightblue {
+    background-color: rgb(0, 132, 253);
 }
 
-.bg-cyan{
+.bg-cyan {
     background-color: rgb(181, 221, 255);
 }
 
-.bg-lilla{
+.bg-lilla {
     background-color: rgb(151, 146, 228);
 }
 
 /******************************
 NAVBAR
 /******************************/
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;    
+    z-index: 9999;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     padding: 1.2rem;
     align-items: center;
-    
+
 
 }
 
-.navbar-list li{
+.navbar-list li {
     list-style-type: none;
-    font-size: calc(.6vw + 0.8rem);
+    font-size: .7rem;
     padding: 0.8rem 1.2rem;
     display: none;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
 
-    .navbar{
-        width: 80%;   
+    .navbar {
+        width: 80%;
     }
 
-    .navbar-list li{
+    .navbar-list li {
         display: block;
     }
-    .menu-ham{
+
+    .menu-ham {
         display: none;
     }
 }
@@ -150,103 +165,98 @@ header{
 /******************************
 SECTION TOOL
 /******************************/
-main{
-    padding-top: 6.25rem;    
+main {
+    padding-top: 6.25rem;
 }
 
-.card.big{
+.card.big {
     justify-content: space-between;
     height: min-content;
 }
 
-.tool{
+.tool {
     width: 100%;
     padding: 1rem;
     gap: 20px;
 }
 
-.tool p{
+.tool p {
     padding: 1rem 0;
-    font-size: calc(1vw + 0.5rem);
 }
 
-.tool .card{
+.tool .card {
     width: 90%;
 }
 
-.card .icon-btn,
-.card span{
-    font-size: calc(10px 2vw 45px);
-}
 
-.tool-img img{
+
+.tool-img img {
     padding-top: 1rem;
     display: block;
 }
 
-.tool-img h2{
+.tool-img h2 {
     padding-top: 1rem;
 }
 
 .tool-img p,
-.tool-img h2{
+.tool-img h2 {
     text-align: left;
 }
 
 @media screen and (min-width: 768px) {
-    
-    .card.big{
+
+    .card.big {
         text-align: left;
         height: min-content;
         width: 40%;
     }
-    
-    .tool{
+
+    .tool {
         flex-direction: row;
         flex-wrap: wrap;
         height: min-content;
         justify-content: space-between;
     }
 
-    .card.normal{
+    .card.normal {
         width: calc(100% / 3 - 20px);
     }
 
-    .tool-text{
+    .tool-text {
         width: 100%;
     }
 
 
-    .tool-img img{
+    .tool-img img {
         width: 50%;
     }
 }
 
 @media screen and (min-width: 992px) {
 
-    .card.big{
+    .card.big {
         flex-direction: row;
-        align-items: flex-end;
     }
-.tool .btn{
-    margin-bottom: 1rem;
-}
 
+    .tool .btn {
+        margin-bottom: 1rem;
+    }
 
-    .tool{
-        margin:0 auto;
+    .tool {
+        margin: 0 auto;
         width: 80%;
     }
 
-    .tool-text{
+    .tool-text {
         width: 50%;
     }
 
-    .tool-img{
+    .tool-img {
         width: 50%;
     }
 
-    .tool-img img{
+    .tool-img img {
         width: 100%;
     }
 }
@@ -255,7 +265,7 @@ main{
 SECTION STRATEGY
 /******************************/
 
-.strategy{
+.strategy {
     padding: 1rem;
     gap: 20px;
     width: 100%;
@@ -263,35 +273,34 @@ SECTION STRATEGY
     height: min-content;
 }
 
-.strategy h2{
+.strategy h2 {
     font-size: clamp(2rem, 3vw, 4rem);
 }
 
 .strategy .app img,
-.strategy .photo img{
+.strategy .photo img {
     width: 50%;
 }
 
-.card.app span{
+.card.app span {
     display: block;
     margin-bottom: 20px;
 }
-.card.app{
+
+.card.app {
     padding: 1rem;
 }
 
-.card.app a{
+.card.app a {
     padding: .7rem 1rem;
     border-radius: 50%;
 }
 
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
 
-    .strategy{
+    .strategy {
         flex-direction: row;
         align-items: flex-end;
         margin: 0 auto;
@@ -300,8 +309,7 @@ SECTION STRATEGY
     }
 
     .card.photo,
-    .card.app
-    {
+    .card.app {
         width: 45%;
     }
 }
@@ -310,142 +318,148 @@ SECTION STRATEGY
 SECTION TESTIMONIAL
 /******************************/
 
-.testimonial{
+.testimonial {
     padding: 1rem;
     gap: 20px;
     text-align: center;
     align-items: center;
 }
 
-.testimonial-text{
+.testimonial-text {
     width: 80%;
 }
 
 .testimonial-text span{
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.testimonial-text span {
     display: block;
-    
+
 }
 
 .testimonial-text span,
-.testimonial-text h2{
+.testimonial-text h2 {
     padding-bottom: 1.2rem;
 }
 
-.testimonial .card{
+.testimonial .card {
     width: 90%;
 }
 
-.testimonial-img img{
-    width: 70%;
+.testimonial-img img {
+    width: 50%;
     aspect-ratio: 1;
     object-position: center;
     object-fit: cover;
     border-radius: 50%;
 }
 
-blockquote{
+blockquote {
     padding: 1rem 0;
 }
 
-blockquote .reverse{
+blockquote .reverse {
     rotate: 180deg;
 }
 
-.card-testimonial{
+.card-testimonial {
     align-items: center;
 }
 
-.card-testimonial .author{
+.card-testimonial .author {
     padding-top: 1rem;
 }
 
-.card-testimonial .author strong{
- font-size: 1.2rem;
-}
-
-
-
 @media screen and (min-width: 768px) {
 
-    .card-testimonial{
+    .card-testimonial {
         flex-direction: row;
         padding: 1rem;
     }
 
-    .testimonial{
-         padding: 0.4rem;
+    .testimonial {
+        padding: 0.4rem;
     }
 
-    .testimonial-img{
+    .testimonial-img {
         width: 40%;
     }
-    
+
+    .testimonial-text span {
+   
+    }
+
+    .card .testimonial-text strong {
+        font-size: 1.7rem;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
 
-    .testimonial{
+    .testimonial {
         width: 80%;
         margin: 0 auto;
     }
-    
+
 }
 
 /******************************
 SECTION BENEFIT
 /******************************/
-section .benefit{
+section .benefit {
     justify-content: center;
 }
 
-.benefit-title{
+.benefit-title {
     text-align: center;
     padding: 2rem;
 }
 
-.benefit{
+.benefit {
     padding: 1.2rem;
     gap: 20px;
     align-items: center;
 }
 
-.benefit .card{
+.benefit .card {
     width: 90%;
     padding: 1.2rem;
     text-align: left;
 }
 
-.benefit span{
+.benefit strong {
     font-size: 3rem;
 }
 
-.benefit p{
+.benefit p {
     padding: 1.2rem;
 }
 
 
 @media screen and (min-width: 768px) {
-    
-    .benefit{
+
+    .benefit {
         align-items: center;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .benefit .card{
+    .benefit .card {
         width: 45%;
     }
 }
 
 @media screen and (min-width: 992px) {
 
-    .benefit{
+    .benefit {
         margin: 0 auto;
         width: 80%;
     }
 
-    .benefit .card{
+    .benefit .card {
         width: 28%;
     }
 }
@@ -454,68 +468,71 @@ section .benefit{
 SECTION ABOUT US
 /******************************/
 
-.about-us{
+.about-us {
     align-items: center;
     width: 100%;
     padding: 1rem;
     gap: 20px;
 }
 
-.about-us-text{
+.about-us-text {
     padding: 1.2rem;
 }
 
-.about-us h2{
-    font-size: 2.5rem;
+.about-us h2 {
+    font-size: clamp(2rem, 4vw, 5rem);
     padding-bottom: 1.2rem;
 }
 
-.about-us-text p{
+
+.about-us-text p {
+    font-size: clamp(0.8rem, 1vw, 2rem);
     padding-bottom: 1.6rem;
+
 }
 
-.author-img{
+.author-img {
     position: relative;
 }
 
-.about-us-author{
+.about-us-author {
     width: 60%;
     padding: 1.2rem;
 }
 
-.about-us-author i{
+.about-us-author i {
     position: absolute;
     top: 0;
     right: 1%;
     font-size: 3.2rem;
 }
 
-.about-us blockquote strong{
-    font-size: 1.2rem;
+.about-us blockquote strong {
+    font-size: clamp(1rem, 1.2rem);
 }
 
-.about-us-author img{
+.about-us-author img {
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
-.about-us-author a{
+.about-us-author a {
     display: inline-block;
 }
 
 
 @media screen and (min-width: 768px) {
-    .about-us{
+    .about-us {
         flex-direction: row;
         justify-content: center;
-    }    
+    }
 
-    .about-us-text{
+    .about-us-text {
         width: 40%;
     }
 
-    .about-us-author{
+    .about-us-author {
         width: 30%;
     }
 
@@ -523,17 +540,17 @@ SECTION ABOUT US
 
 @media screen and (min-width: 992px) {
 
-    .about-us{
+    .about-us {
         justify-content: center;
         margin: 0 auto;
         width: 80%;
     }
 
-    .about-us-text{
+    .about-us-text {
         width: 65%;
     }
 
-    .about-us-author{
+    .about-us-author {
         width: 25%;
         padding: 1rem;
     }
@@ -544,40 +561,41 @@ SECTION ABOUT US
 SECTION PRE FOOTER
 /******************************/
 
-.prefooter{
-    width: 100%;  
-    padding: 1rem; 
-    text-align: center; 
+.prefooter {
+    width: 100%;
+    padding: 1rem;
+
+    text-align: center;
 }
 
-.prefooter span{
+.prefooter span {
     display: block;
     padding: 1rem;
 }
 
-.prefooter>span:first-child{
+.prefooter>span:first-child {
     color: rgb(200, 198, 227);
 }
 
-.prefooter .motivation{
+.prefooter .motivation {
     padding-bottom: 1.7rem;
 }
 
-.prefooter h2{
+.prefooter h2 {
     font-size: 2.5rem;
 }
 
-.prefooter .yellow{
+.prefooter .yellow {
     padding-top: 1rem;
     font-size: 3.75rem;
 }
 
-.prefooter>a{
+.prefooter>a {
     padding: .5rem 4rem;
     border-radius: 20px;
 }
 
-.prefooter span a{
+.prefooter span a {
     text-decoration: underline;
 }
 
@@ -586,37 +604,37 @@ SECTION PRE FOOTER
 }
 
 @media screen and (min-width: 992px) {
-    .prefooter{
+    .prefooter {
         margin: 0 auto;
         width: 80%;
-    }    
+    }
 }
 
 /******************************
 SECTION FOOTER
 /******************************/
 
-.footer{
+.footer {
     padding: 1rem;
     width: 100%;
     text-align: center;
 }
 
-.footer span{
+.footer span {
     display: block;
 }
 
-.footer span:first-child{
-    padding-bottom: 2rem ;
+.footer span:first-child {
+    padding-bottom: 2rem;
 }
 
-.footer span a{
+.footer span a {
     color: rgb(151, 146, 228);
     text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
-    .footer{
+    .footer {
         width: 60%;
         margin: 0 auto;
     }
@@ -624,8 +642,7 @@ SECTION FOOTER
 
 
 @media screen and (min-width: 992px) {
-    .footer{
+    .footer {
         width: 40%;
     }
 }
-
